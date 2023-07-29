@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: "https://fashion-react.s3.ap-south-1.amazonaws.com/hero4.png",
     tittle: "Summer Wear",
+    cat:"men"
   },
   {
     id: 2,
     img: "https://fashion-react.s3.ap-south-1.amazonaws.com/hero5.jpg",
     tittle: "Winter Wears",
+    cat:"jean"
   },
   {
     id: 3,
     img: "https://fashion-react.s3.ap-south-1.amazonaws.com/hero6.jpg",
     tittle: "Casual Wears",
+    cat:"men"
   },
 ];
 
@@ -47,6 +50,7 @@ export const popularProducts = [
     price: "Rs.999",
     name: "Bag",
     desc: "Black Unisex Bag",
+    cat:"men"
   },
   {
     id: 34,
@@ -54,6 +58,7 @@ export const popularProducts = [
     price: "Rs.1100",
     name: "Nike",
     desc: "Green Unisex Shoe",
+    cat:"jean"
   },
   {
     id: 33,
@@ -61,6 +66,7 @@ export const popularProducts = [
     price: "Rs.1900",
     name: "Converse",
     desc: "Allstar Unisex shoe",
+    cat:"jean"
   },
   {
     id: 66,
@@ -68,6 +74,7 @@ export const popularProducts = [
     price: "Rs.1800",
     name: "Nike",
     desc: "Brown Unisex shoe",
+    cat:"jean"
   },
   {
     id: 9,
@@ -75,6 +82,7 @@ export const popularProducts = [
     price: "Rs.2000",
     name: "Nike",
     desc: "Red Sneakers",
+    cat:"jean"
   },
   {
     id: 1,
@@ -82,6 +90,7 @@ export const popularProducts = [
     price: "Rs.3000",
     name: "Clarks",
     desc: "Green Casual shoe",
+    cat:"jean"
   },
   {
     id: 7,
@@ -89,6 +98,7 @@ export const popularProducts = [
     price: "Rs.2000",
     name: "RayBan",
     desc: "Black SunGlass ",
+    cat:"men"
   },
   {
     id: 6,
@@ -96,6 +106,7 @@ export const popularProducts = [
     price: "Rs.3000",
     name: "Google",
     desc: "Watch 3",
+    cat:"women"
   },
   {
     id: 5,
@@ -103,6 +114,7 @@ export const popularProducts = [
     price: "Rs.5000",
     name: "Pepe Jeans",
     desc: "Mens Jean",
+    cat:"women"
   },
   {
     id: 4,
@@ -110,6 +122,7 @@ export const popularProducts = [
     price: "Rs.4000",
     name: "H&M",
     desc: "Sweater",
+    cat:"women"
   },
   {
     id: 3,
@@ -117,6 +130,7 @@ export const popularProducts = [
     price: "Rs.2000",
     name: "Jack and Jones",
     desc: "Mens White Tee",
+    cat:"kids"
   },
   {
     id: 2,
@@ -124,5 +138,6 @@ export const popularProducts = [
     price: "Rs.2000",
     name: "H&M",
     desc: "Mens white Tee",
+    cat:"kids"
   },
 ];

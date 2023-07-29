@@ -3,7 +3,7 @@ import {
   ArrowForwardIosRounded,
 } from "@material-ui/icons";
 import { styled } from "styled-components";
-
+import {mobile} from "../responsive"
 import { useState } from "react";
 import { Slideritems } from "../data.js";
 const Container = styled.div`
@@ -12,6 +12,8 @@ const Container = styled.div`
   display: flex;
   overflow: hidden;
   position: relative;
+  ${mobile({display:"none"})}
+
 `;
 const Arrow = styled.div`
   height: 50px;

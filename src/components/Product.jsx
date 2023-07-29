@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FavoriteBorderSharp,
   SearchSharp,
@@ -91,8 +92,13 @@ const Name = styled.h3`
   align-items: center;
   justify-content: center;
 `;
+const StyledLink = styled(Link)`
 
-const Product = ({ item }) => {
+  text-decoration: none;
+  color: #000;
+
+`;
+const Product = ({ item ,isHomePage}) => {
   return (
     <Acontainer>
       <Container>
@@ -105,7 +111,9 @@ const Product = ({ item }) => {
             <ShoppingCartRounded />
           </Icon>
           <Icon>
+            <StyledLink to={`/product/${item._id}`}>
             <SearchSharp />
+            </StyledLink>
           </Icon>
           <Icon>
             <FavoriteBorderSharp />
@@ -113,8 +121,8 @@ const Product = ({ item }) => {
         </Info>
       </Container>
       <InfoContainer>
-        <Name>{item.name}</Name>
-        <Desc>{item.desc}</Desc>
+        <Name>{item.tittle}</Name>
+        {!isHomePage && <Desc>{item.desc}</Desc>}
         <Price>{item.price}</Price>
       </InfoContainer>
     </Acontainer>
