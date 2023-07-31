@@ -27,8 +27,8 @@ const Arrow = styled.div`
   top: 0;
   bottom: 0;
   margin: auto;
-  left: ${(props) => props.direction === "left" && "10px"};
- 
+  left: ${(props) => (props.direction ==="left" ? "10px" : "unset")};
+  right: ${(props) =>( props.direction === "right" ? "10px" : "unset")};
   cursor: pointer;
   overflow: visible;
   z-index: 2;
