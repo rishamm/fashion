@@ -16,8 +16,8 @@ const Products = ({ cat, filters, sort ,isHomePage}) => {
     const getProducts = async () => {
       try {
         const url = cat
-          ? `http://localhost:5000/api/product?category=${cat}`
-          : "http://localhost:5000/api/product";
+          ? `https://glamorous-lime-pea-coat.cyclic.cloud/api/product?category=${cat}`
+          : "https://glamorous-lime-pea-coat.cyclic.cloud/api/product";
         const res = await axios.get(url);
         setProducts(res.data);
       } catch (err) {
