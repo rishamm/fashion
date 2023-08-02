@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
+
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import Register from "./pages/Register";

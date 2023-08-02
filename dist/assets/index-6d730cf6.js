@@ -201,8 +201,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   top: 0;
   bottom: 0;
   margin: auto;
-  left: ${e=>e.direction==="left"&&"10px"};
- 
+  left: ${e=>e.direction==="left"?"10px":"unset"};
+  right: ${e=>e.direction==="right"?"10px":"unset"};
   cursor: pointer;
   overflow: visible;
   z-index: 2;

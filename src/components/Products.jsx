@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import Product from "./Product";
 import { useEffect, useState } from "react";
+
 import axios  from 'axios'
+const baseUrl =import.meta.env.VITE_URL;
+
 const Container = styled.div`
   display: flex;
   padding: 20px;
@@ -16,8 +19,9 @@ const Products = ({ cat, filters, sort ,isHomePage}) => {
     const getProducts = async () => {
       try {
         const url = cat
-          ? `https://glamorous-lime-pea-coat.cyclic.cloud/api/product?category=${cat}`
-          : "https://glamorous-lime-pea-coat.cyclic.cloud/api/product";
+          ? `${baseUrl}/product?category=${cat}`
+          : `${baseUrl}/product`;
+      
         const res = await axios.get(url);
         setProducts(res.data);
       } catch (err) {
@@ -58,6 +62,7 @@ const Products = ({ cat, filters, sort ,isHomePage}) => {
         : products.slice(0, 4).map((item) => (
             <Product item={item} key={item._id} isHomePage={isHomePage} />
           ))}
+        
     </Container>
   );
 };
